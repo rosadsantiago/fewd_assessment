@@ -12,11 +12,10 @@ html {
 	clear: both;
 	line-height: 0;
 	content: ".";
-
 	visibility: hidden;
 }
 
-/* Your styles here */
+/* styles here */
 html{
 	/* All font-sizes on the page using "rems" will be relative to this value here */
 	font-size: 16px;
@@ -24,8 +23,43 @@ html{
 body{
 	font-size: 1em;
 	font-family: Helvetica, Arial, sans-serif;
-	color: #666;	
+	color: #666;
+	background-color: transparent;
+	background-image: url("dots.png");	
 }
+
+hr.lines { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+a{
+	color: #1d2124;
+}
+
+button {
+	background-color: #f7eeef;
+	color: gray; 
+}
+
+.south{
+	background-color: rgba(248,248,248,1)
+
+}
+.site{
+	background-color: white;
+}
+
+ h3, h4{
+	color: #4682b4;
+}
+/*body{
+	background: url(".img/dots.jpeg");
+	}*/
 
 /* Typography */
 h1,
@@ -56,8 +90,11 @@ p:last-child{
 	margin-bottom: 0;
 }
 
+
 /* Layout */
 .site{
+	border-right:  1px solid #ccc;
+	border-left: 1px solid #ccc;
 	padding: 20px;
 	width: 960px;
 	margin: 0 auto;
@@ -68,7 +105,7 @@ p:last-child{
 .about,
 .features,
 .south{
-	border: 1px solid #ccc;
+
 	margin: 0 0 10px 0;
 	padding: 10px;
 }
@@ -92,26 +129,13 @@ p:last-child{
     margin: 5px;
 }
 
-input[type=text] {
-    width: 150px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
+.menu{
+		display: inline;
+    margin: 5px;
 
-input[type=text]:focus {
-    width: 100%;
 }
-
-.main-navigation ul {
+.main-navigation ul li a{
+		text-decoration: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -128,7 +152,7 @@ input[type=text]:focus {
     color: black;
     text-align: center;
     padding: 10px 8px;
-    text-decoration: none;
+    
 
     
 }
@@ -136,16 +160,14 @@ input[type=text]:focus {
 .main-navigation ul li a:hover{
 		background: #efefef;
 		color: #333
+		text-decoration: none;
 	
 }
 
-.main-navigation ul li a{
-		text-decoration: none;
-}
 
 
 .img-fluid{
-		
+		display: block;
 		width: 100%;
 		height: 230px;
 }
@@ -154,8 +176,7 @@ input[type=text]:focus {
 	height: 250px;
 }
 
-
-
+.
 .hero h2{
 	text-align: center;
 	margin: 0;
@@ -166,9 +187,6 @@ input[type=text]:focus {
 	text-align: left;
 }
 
-.features{
-
-}
 
 .features .feature{
 	float: left;
@@ -178,13 +196,50 @@ input[type=text]:focus {
 }
 
 .features .feature .inner{
-	border: 1px solid #ccc;
 	height: 200px;
 	padding: 10px;
 }
 
-.south{
-	text-align: right;
+.feature_img{
+	width: 85%;
+	
+}
+
+.feature p{
+	text-align: center;
+}
+
+
+.menu ul li{
+	text-align: left;
+	list-style:none;
+ 	padding:0;
+ 	float:center; padding:5px 0; 
+ 	font-weight:normal;
+}
+.menu ul {
+	display: inline-block;
+}
+
+.left_menu{
+	float: left;
+	width: 70%;
+	padding: 5px;
+
+}
+.social {
+	float: right;
+	width:  30%;
+}
+
+.social li{
+	float: right;
+	display: inline-block;
+}
+
+.social img{
+	padding: 5px;
+
 }
 
 .south p{
@@ -192,6 +247,12 @@ input[type=text]:focus {
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
+
+
+
+
+
 
 /* When your screen becomes 960px wide or less, run all of the CSS below */
 @media screen and (max-width: 960px) {
@@ -209,12 +270,14 @@ input[type=text]:focus {
 	html{
 		font-size: 18px;
 	}
-	.logo{
+	/*.logo{
 		width: 100%;
 		margin: 0 0 10px 0;
 		text-align: center;
-	}
-	.main-navigation{
+	}*/
+
+	
+	/*.main-navigation{
 		width: 100%;
 		margin: 0;
 		padding: 0;
@@ -226,7 +289,9 @@ input[type=text]:focus {
 	}
 	.main-navigation ul li:last-child{
 		margin-bottom: 0;
-	}
+	}*/
+
+
 	.features .feature{
 		width: 100%;
 		padding: 0;
@@ -235,5 +300,17 @@ input[type=text]:focus {
 	}
 	.features .feature .inner{
 		height: auto;
+	}
+	.left_menu li{
+		margin: 0 0 10px 0;
+		width: 100%;
+		padding: 0;
+	}
+
+	.social{
+		margin: 0 0 10px 0;
+		width: 100%;
+		padding: 0;
+
 	}
 }
