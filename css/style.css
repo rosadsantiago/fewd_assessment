@@ -279,7 +279,18 @@ p:last-child{
 }
 
 
+.column {
+    float: left;
+    padding: 10px;
+}
 
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
 
 
 
@@ -333,7 +344,7 @@ p:last-child{
 	.features .feature .inner{
 		height: auto;
 	}
-	
+
 	.left_menu li {
 		margin: 0 0 10px 0;
 		width: 100%;
@@ -343,12 +354,17 @@ p:last-child{
 
 	}
 
-	.social {
+		.social {
 		margin: 0 0 10px 0;
 		width: 100%;
 		padding: 0;
 		text-align: center;
 	}
+	
+	@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
 
 
