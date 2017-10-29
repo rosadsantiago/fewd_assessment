@@ -39,6 +39,7 @@ hr.lines {
 
 a{
 	color: #1d2124;
+	padding: 5px;
 }
 
 button {
@@ -57,9 +58,16 @@ button {
  h3, h4{
 	color: #4682b4;
 }
-/*body{
-	background: url(".img/dots.jpeg");
-	}*/
+
+.north_2 li{
+ font-family: 'Calligraffitti', cursive;
+ font-size: x-large;
+}
+.north_2 .searchbar{
+	display: inline;
+	float: right;
+}
+
 
 /* Typography */
 h1,
@@ -90,6 +98,10 @@ p:last-child{
 	margin-bottom: 0;
 }
 
+.south{
+	font-size: 80%;
+}
+
 
 /* Layout */
 .site{
@@ -116,10 +128,6 @@ p:last-child{
 	padding: 10px;
 }
 
-.logo{
-	display: center;
-}
-
 .info nav ul {
     padding: 0;
 }
@@ -143,18 +151,20 @@ p:last-child{
     
 }
 
-.main-navigation li {
-    float: left;
-}
 
 .main-navigation li{
     display: block;
     color: black;
     text-align: center;
+    float: left;
     padding: 10px 8px;
     
+}
 
-    
+.logo{
+	display: inline-block;
+
+
 }
 
 .main-navigation ul li a:hover{
@@ -164,12 +174,25 @@ p:last-child{
 	
 }
 
+ /*.logo li{
+		display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    width: 90%;
+}
 
+*/
 
 .img-fluid{
 		display: block;
 		width: 100%;
 		height: 230px;
+}
+
+.carousel .hero{
+  width:100%;
+  
+
 }
 
 .hero{
@@ -205,8 +228,14 @@ p:last-child{
 	
 }
 
-.feature p{
+.feature {
 	text-align: center;
+
+}
+
+.featured_product{
+	font-family: 'Calligraffitti', cursive;
+	font-size: x-large;
 }
 
 
@@ -214,14 +243,15 @@ p:last-child{
 	text-align: left;
 	list-style:none;
  	padding:0;
- 	float:center; padding:5px 0; 
+ 	float:center; 
+ 	padding:5px 0; 
  	font-weight:normal;
 }
 .menu ul {
 	display: inline-block;
 }
 
-.left_menu{
+.left_menu {
 	float: left;
 	width: 70%;
 	padding: 5px;
@@ -270,14 +300,16 @@ p:last-child{
 	html{
 		font-size: 18px;
 	}
-	/*.logo{
+	.logo{
 		width: 100%;
 		margin: 0 0 10px 0;
 		text-align: center;
-	}*/
+	}
+
+
 
 	
-	/*.main-navigation{
+	.main-navigation{
 		width: 100%;
 		margin: 0;
 		padding: 0;
@@ -289,7 +321,7 @@ p:last-child{
 	}
 	.main-navigation ul li:last-child{
 		margin-bottom: 0;
-	}*/
+	}
 
 
 	.features .feature{
@@ -301,16 +333,22 @@ p:last-child{
 	.features .feature .inner{
 		height: auto;
 	}
-	.left_menu li{
+	
+	.left_menu li {
 		margin: 0 0 10px 0;
 		width: 100%;
 		padding: 0;
+		text-align: center;
+
+
 	}
 
-	.social{
+	.social {
 		margin: 0 0 10px 0;
 		width: 100%;
 		padding: 0;
-
+		text-align: center;
 	}
 }
+
+
